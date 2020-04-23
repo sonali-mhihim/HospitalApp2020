@@ -10,8 +10,6 @@ namespace Hospital_App
     /// </summary>
     class PatientRegistration
     {
-        private static int lastMedicalRecordNumber = 1;
-
         #region properties
         /// <summary>
         /// unique medical record number for each patient
@@ -58,7 +56,7 @@ namespace Hospital_App
         #region Construtors
         public PatientRegistration()
         {
-            MedicalRecordNumber = lastMedicalRecordNumber++;
+            
         }
         #endregion
 

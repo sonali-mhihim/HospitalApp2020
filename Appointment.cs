@@ -35,9 +35,9 @@ namespace HospitalApp
         /// Appointment for What of service?
         /// </summary>
         public TypeofAppointments AppointmentType { get; set; }
-        #endregion
 
-        
+        public string AppointmentId { get; private set; }
+        #endregion
 
         #region Methods
         /// <summary>
@@ -51,7 +51,6 @@ namespace HospitalApp
             this.AppointmentDate = createDate;
             this.ProviderName = providerName;
             this.PatientName = patientName;
-            
         }
         /// <summary>
         /// Modify appointment due to unanticipated events
